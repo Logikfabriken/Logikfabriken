@@ -30,7 +30,7 @@ var map = null;
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
 google.maps.event.addDomListener(window, 'resize', function() {
-           center: new google.maps.LatLng(57.7079112,11.9591666); // New York
+           center: new google.maps.LatLng(57.7079112,11.9612766); // Packhusplatsen
 });
 
 
@@ -44,12 +44,13 @@ function init() {
 
         // The latitude and longitude to center the map (always required)
 
-           center: new google.maps.LatLng(57.7079112,11.9591666), 
+           center: new google.maps.LatLng(57.7079112,11.9612766), 
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
         draggable: false,
+        
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -65,7 +66,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(57.7079084,11.9591666);
+    var myLatLng = new google.maps.LatLng(57.7079084,11.9612766);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
